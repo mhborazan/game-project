@@ -223,6 +223,7 @@ header {
     align-items: center;
 }
 
+
 #row {
     width: 300px;
     display: flex;
@@ -305,5 +306,48 @@ header {
     margin-top: 30px;
     margin-right: 10px;
     border-radius: 10px;
+
+}
+
+
+
+
+@media screen and (max-width:1050px) {
+    #wrapper {
+        width: 300px;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #left {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #left>img {
+        margin: 5px 20px 0px 20px;
+    }
+
+    #left>nav {
+        line-height: 20px;
+    }
+
+    #left>nav>a {
+        margin-right: 5px;
+    }
+
+
+    #right {
+        width: 300px;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    #buttons>button {
+        width: 100px;
+    }
 
 }
